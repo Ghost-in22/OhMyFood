@@ -1,0 +1,14 @@
+// Mixin pour les boutons
+@mixin button-style($bg-color-start, $bg-color-end) {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: linear-gradient(to right, $bg-color-start, $bg-color-end);
+  color: #fff;
+  font-weight: bold;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: linear-gradient(to right, $bg-color-end, $bg-color-start);
+  }
+}

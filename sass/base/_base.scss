@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  color: #333;
+  font-family: $font-body;
+  color: $text-color;
   background-color: #fff;
   line-height: 1.6;
 }
@@ -17,12 +17,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: $font-title;
 }
 
 a {
   text-decoration: none;
   color: inherit;
 }
-
-/*# sourceMappingURL=style.css.map */
