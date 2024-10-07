@@ -56,4 +56,33 @@ a {
   color: #333;
 }
 
+.reservation-section {
+  padding: 50px;
+  text-align: center;
+}
+.reservation-section h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: black;
+}
+.reservation-section p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+}
+.reservation-section .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: linear-gradient(to right, #9356dc, #ff79da);
+  color: #fff;
+  font-weight: 400;
+  transition: background 0.3s ease;
+}
+.reservation-section .btn:hover {
+  background: linear-gradient(to right, #ff79da, #9356dc);
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+.reservation-section {
+  padding: 50px;
+  text-align: center;
+
+  h1 {
+    font-family: $font-body;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: black;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: $text-color;
+  }
+
+  .btn {
+    @include button-style($primary-color, $secondary-color);
+  }
+}
