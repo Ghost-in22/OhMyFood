@@ -3,6 +3,8 @@
   padding: 10px;
   text-align: center;
   box-shadow: $shadow-heavy;
+  position: relative;
+  z-index: 9;
 
   i {
     color: $text-color;

@@ -3,12 +3,17 @@
   display: inline-block;
   padding: 10px 20px;
   border-radius: 25px;
-  background: linear-gradient(to right, $bg-color-start, $bg-color-end);
+  background: linear-gradient(to top, $bg-color-start, $bg-color-end);
   color: #fff;
   font-weight: 400;
   transition: background 0.3s ease;
+  box-shadow: $shadow-medium;
 
   &:hover {
-    background: linear-gradient(to right, $bg-color-end, $bg-color-start);
+    background: linear-gradient(
+      to top,
+      lighten($bg-color-start, 5%),
+      lighten($bg-color-end, 5%)
+    );
   }
 }
