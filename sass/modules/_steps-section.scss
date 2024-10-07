@@ -1,0 +1,58 @@
+.steps-section {
+  padding: 40px 20px;
+
+  h2 {
+    font-family: $font-body;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .step {
+      position: relative;
+
+      .step-number {
+        position: absolute;
+        top: 50%;
+        left: -15px;
+        transform: translate(
+          25%,
+          -50%
+        ); /* Centrage vertical et léger ajustement horizontal */
+        width: 20px; /* Taille du rond */
+        height: 20px;
+        border-radius: 50%;
+        background-color: $primary-color;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px; /* Taille du texte dans le rond */
+      }
+
+      .btn-step {
+        @include button-gray-style(
+          $light-gray,
+          $text-color
+        ); // Mixin avec les variables
+
+        i {
+          margin-right: 25px;
+        }
+
+        .icon-primarycolor {
+          color: $primary-color;
+        }
+
+        &:hover {
+          background-color: lighten($light-gray, 10%);
+        }
+      }
+    }
+  }
+}

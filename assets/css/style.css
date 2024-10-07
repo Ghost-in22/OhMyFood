@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -88,6 +89,67 @@ a {
 }
 .reservation-section .btn:hover {
   background: linear-gradient(to top, #a16be0, #ff93e1);
+}
+
+.steps-section {
+  padding: 40px 20px;
+}
+.steps-section h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.steps-section .steps {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.steps-section .steps .step {
+  position: relative;
+}
+.steps-section .steps .step .step-number {
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  transform: translate(25%, -50%); /* Centrage vertical et léger ajustement horizontal */
+  width: 20px; /* Taille du rond */
+  height: 20px;
+  border-radius: 50%;
+  background-color: #9356dc;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px; /* Taille du texte dans le rond */
+}
+.steps-section .steps .step .btn-step {
+  display: flex;
+  align-items: center;
+  padding: 25px 40px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.steps-section .steps .step .btn-step:hover {
+  background-color: white;
+}
+.steps-section .steps .step .btn-step i {
+  margin-right: 25px;
+}
+.steps-section .steps .step .btn-step .icon-primarycolor {
+  color: #9356dc;
+}
+.steps-section .steps .step .btn-step:hover {
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

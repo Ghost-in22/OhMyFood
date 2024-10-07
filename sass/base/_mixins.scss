@@ -1,4 +1,4 @@
-// Mixin pour les boutons
+// Mixin pour les boutons de couleur avec dégradé
 @mixin button-style($bg-color-start, $bg-color-end) {
   display: inline-block;
   padding: 10px 20px;
@@ -15,5 +15,32 @@
       lighten($bg-color-start, 5%),
       lighten($bg-color-end, 5%)
     );
+  }
+}
+
+// Mixin pour le style des boutons gris
+@mixin button-gray-style(
+  $bg-color,
+  $text-color,
+  $padding: 25px 40px,
+  $border-radius: 20px
+) {
+  display: flex;
+  align-items: center;
+  padding: $padding;
+  background-color: $bg-color;
+  border: none;
+  border-radius: $border-radius;
+  font-size: 16px;
+  font-weight: 400;
+  color: $text-color;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.3s ease;
+  box-shadow: $shadow-medium;
+
+  &:hover {
+    background-color: lighten($bg-color, 10%);
   }
 }
