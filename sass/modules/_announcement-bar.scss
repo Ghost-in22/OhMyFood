@@ -1,0 +1,17 @@
+.announcement-bar {
+  background-color: $light-gray;
+  padding: 10px;
+  text-align: center;
+  box-shadow: $shadow-heavy;
+
+  i {
+    color: $text-color;
+    margin-right: 8px;
+  }
+
+  p {
+    display: inline;
+    font-size: 14px;
+    color: $text-color;
+  }
+}

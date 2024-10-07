@@ -29,6 +29,8 @@ a {
   background-color: #fff;
   padding: 10px 0;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
 }
 .header .logo {
   text-align: center;
@@ -36,6 +38,22 @@ a {
 .header .logo img {
   width: 150px;
   margin-top: 10px;
+}
+
+.announcement-bar {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+.announcement-bar i {
+  color: #333;
+  margin-right: 8px;
+}
+.announcement-bar p {
+  display: inline;
+  font-size: 14px;
+  color: #333;
 }
 
 /*# sourceMappingURL=style.css.map */
