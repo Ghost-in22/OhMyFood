@@ -1,0 +1,30 @@
+.restaurants-section {
+  padding: 40px 20px;
+  background-color: $light-gray;
+
+  &__title {
+    font-family: $font-title;
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 30px;
+    color: $text-color;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    ); /* Adaptation responsive */
+    gap: 20px;
+  }
+
+  .restaurant-card {
+    @include restaurant-card-style(
+      15px,
+      $shadow-light,
+      $shadow-medium,
+      -5px
+    ); /* Utilisation de la mixin */
+  }
+}
