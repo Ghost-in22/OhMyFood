@@ -26,5 +26,11 @@
       $shadow-medium,
       -5px
     ); /* Utilisation de la mixin */
+
+    &__favorite {
+      width: 22px;
+      height: 22px;
+      @include icon-favorite-animation($primary-color);
+    }
   }
 }

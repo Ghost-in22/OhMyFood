@@ -121,18 +121,41 @@
     font-size: 14px;
     color: $text-color;
   }
+}
 
-  &__favorite {
-    font-size: 18px;
-    cursor: pointer;
-    color: black; /* Contour noir par défaut */
-    transition: transform 0.3s ease, color 0.3s ease, font-weight 0.3s ease; /* Transition pour le zoom, couleur et poids */
+// Mixin pour l'animation des icônes favori
+@mixin icon-favorite-animation($duration: 300ms) {
+  position: relative;
 
-    /* Icône pleine au survol */
-    &:hover {
-      color: $primary-color; /* Changer la couleur en remplissage */
-      font-weight: 900; /* Icône pleine en augmentant le poids de la police */
-      transform: scale(1.1); /* Animation de zoom */
+  .favorite-empty {
+    display: block;
+    opacity: 1;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    transition: opacity $duration ease;
+  }
+
+  .favorite-full {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    transition: opacity $duration ease;
+  }
+
+  // Au survol, on affiche l'image du cœur plein
+  &:hover {
+    .favorite-empty {
+      opacity: 0;
+    }
+
+    .favorite-full {
+      opacity: 1;
     }
   }
 }
