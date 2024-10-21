@@ -13,4 +13,21 @@
       margin-top: 10px;
     }
   }
+
+  &__back {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+
+    a {
+      color: $text-color;
+      text-decoration: none;
+
+      i {
+        font-size: 16px;
+        color: $text-color;
+      }
+    }
+  }
 }

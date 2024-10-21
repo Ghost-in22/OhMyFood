@@ -30,7 +30,7 @@
     &__favorite {
       width: 22px;
       height: 22px;
-      @include icon-favorite-animation($primary-color);
+      @include icon-favorite-animation;
     }
   }
 }
