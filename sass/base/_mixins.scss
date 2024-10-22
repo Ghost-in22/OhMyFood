@@ -6,7 +6,7 @@
   background: linear-gradient(to top, $bg-color-start, $bg-color-end);
   color: #fff;
   font-weight: 400;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, box-shadow 0.3 ease;
   box-shadow: $shadow-medium;
   border: none;
 
@@ -16,6 +16,7 @@
       lighten($bg-color-start, 5%),
       lighten($bg-color-end, 5%)
     );
+    box-shadow: $shadow-mediumplus;
   }
 }
 
@@ -135,6 +136,7 @@
     width: 100%;
     height: 100%;
     transition: opacity $duration ease;
+    cursor: pointer;
   }
 
   .favorite-full {
@@ -147,6 +149,7 @@
     width: 100%;
     height: 100%;
     transition: opacity $duration ease;
+    cursor: pointer;
   }
 
   // Au survol, on affiche l'image du cœur plein

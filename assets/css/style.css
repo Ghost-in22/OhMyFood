@@ -98,12 +98,13 @@ a {
   background: linear-gradient(to top, #9356dc, #ff79da);
   color: #fff;
   font-weight: 400;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, box-shadow 0.3 ease;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   border: none;
 }
 .reservation-section .btn:hover {
   background: linear-gradient(to top, #a16be0, #ff93e1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .steps-section {
@@ -191,7 +192,7 @@ a {
   display: flex;
   flex-direction: column; /* S'assure que l'image et le contenu sont empilés verticalement */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Utilisation de la mixin */
+  /* Mixin card */
 }
 .restaurants-section .restaurant-card:hover {
   transform: translateY(-5px);
@@ -257,6 +258,7 @@ a {
   width: 100%;
   height: 100%;
   transition: opacity 300ms ease;
+  cursor: pointer;
 }
 .restaurants-section .restaurant-card__favorite .favorite-full {
   display: block;
@@ -268,6 +270,7 @@ a {
   width: 100%;
   height: 100%;
   transition: opacity 300ms ease;
+  cursor: pointer;
 }
 .restaurants-section .restaurant-card__favorite:hover .favorite-empty {
   opacity: 0;
@@ -330,7 +333,7 @@ a {
   background-color: #f0f0f0;
   border-radius: 35px 35px 0 0;
   margin-top: -50px;
-  padding: 10px;
+  padding: 20px;
   position: relative;
   z-index: 5;
 }
@@ -352,6 +355,7 @@ a {
   width: 22px;
   height: 22px;
   position: relative;
+  cursor: pointer;
 }
 .restaurant__favorite .favorite-empty {
   display: block;
@@ -360,6 +364,7 @@ a {
   width: 100%;
   height: 100%;
   transition: opacity 300ms ease;
+  cursor: pointer;
 }
 .restaurant__favorite .favorite-full {
   display: block;
@@ -371,6 +376,7 @@ a {
   width: 100%;
   height: 100%;
   transition: opacity 300ms ease;
+  cursor: pointer;
 }
 .restaurant__favorite:hover .favorite-empty {
   opacity: 0;
@@ -406,9 +412,10 @@ a {
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Alignement des éléments en haut */
+  align-items: flex-start;
   text-align: left;
-  position: relative; /* Nécessaire pour positionner le prix en bas à droite */
+  position: relative; /* Pour positionner le prix en bas à droite */
+  cursor: pointer;
 }
 .restaurant__menu-name {
   font-size: 16px;
@@ -439,20 +446,21 @@ a {
   justify-content: center;
 }
 .restaurant__menu-btn {
-  width: 50%;
-  margin-top: 20px;
+  width: 186px;
+  margin: 20px 0px;
   display: inline-block;
   padding: 15px 20px;
   border-radius: 25px;
   background: linear-gradient(to top, #9356dc, #ff79da);
   color: #fff;
   font-weight: 400;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, box-shadow 0.3 ease;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   border: none;
 }
 .restaurant__menu-btn:hover {
   background: linear-gradient(to top, #a16be0, #ff93e1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */
