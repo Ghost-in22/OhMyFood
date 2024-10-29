@@ -1,0 +1,44 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; //100% de la width de la fenêtre
+  height: 100vh; //100% de la height de la fenêtre
+  background-color: rgba(
+    $primary-color,
+    0.9
+  ); // Couleur de fond avec 90% d'opacité
+  display: flex;
+  align-items: center;
+  justify-content: center; //Aligne le cercle
+  z-index: 100; //Premier plan
+  animation: fadeOut 0.5s ease-in 2.5s forwards; // fadeOut=disparition en fondu en 0.5s - accélération de la disparition - reste visible 2.5s - fowards=le style (opacity: 0 et visibility: hidden) reste après l'animation
+
+  &__circle {
+    width: 50px;
+    height: 50px;
+    border: 5px solid lighten($primary-color, 20%); // Le cercle complet
+    border-top-color: $secondary-color; // 1/4 du cercle (bordure top) d'une couleur différente
+    border-radius: 50%; // Donne la forme en rond
+    animation: spinPulse 1s linear infinite; //spinPulse= animation qui fait tourner + pulsation effet battement de coeur - un tour complet dure 1s - linear=la vitesse de la rotation reste constante - infinite= l'animation dure indéfiniment
+  }
+}
+
+@keyframes spinPulse {
+  0% {
+    transform: scale(1) rotate(0deg); // Rotation de départ et taille normale
+  }
+  50% {
+    transform: scale(1.1) rotate(180deg); // Taille augmentée et rotation de 180°
+  }
+  100% {
+    transform: scale(1) rotate(360deg); // Taille initiale avec rotation complète
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

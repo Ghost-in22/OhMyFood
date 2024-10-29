@@ -6,7 +6,7 @@
   background: linear-gradient(to top, $bg-color-start, $bg-color-end);
   color: #fff;
   font-weight: 400;
-  transition: background 0.3s ease, box-shadow 0.3 ease;
+  transition: linear-gradient 0.3s ease, box-shadow 0.3 ease;
   box-shadow: $shadow-medium;
   border: none;
 
