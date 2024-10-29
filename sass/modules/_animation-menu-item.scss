@@ -1,0 +1,24 @@
+.restaurant__menu-item {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+
+  @for $i from 1 through 20 {
+    //@for= boucle la séquence en fonction du compteur $i - 1 through 20 = execute la boucle 20 fois en augmentant la valeur de $i de 1 à chaque fois
+    &:nth-child(#{$i}) {
+      // /nth-child applique le style à tous les .restaurant__menu-item qui sont dans le même parent - #{$i} = interpolation SCSS qui permet de remplacer $i par la valeur de l'itération à laquelle il est
+      animation-delay: $i *
+        0.2s; // multiplie la valeur de $i (donc l'itération à laquelle il est) par 0.2 donc cela rajoute 0.2s à chaque item (ex:pour le 1er 1x0.2=02, pour le deuxieme 2x0.2=0.4, 3x0.2=0.6 et ainsi de suite)
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
