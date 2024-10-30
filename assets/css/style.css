@@ -106,6 +106,13 @@ a {
   background: linear-gradient(to top, #a16be0, #ff93e1);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
+@media (min-width: 1024px) {
+  .reservation-section h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+}
 
 .steps-section {
   padding: 40px 20px;
@@ -167,6 +174,24 @@ a {
 .steps-section .steps .step .btn-step:hover {
   background-color: white;
 }
+@media (min-width: 1024px) {
+  .steps-section {
+    padding: 50px 180px;
+  }
+  .steps-section .steps {
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+  }
+  .steps-section .steps .step {
+    width: 335px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1050px) {
+  .steps-section .btn-step {
+    height: 110px;
+  }
+}
 
 .restaurants-section {
   padding: 40px 20px;
@@ -181,7 +206,7 @@ a {
 }
 .restaurants-section__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adaptation responsive */
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 .restaurants-section .restaurant-card {
@@ -192,7 +217,6 @@ a {
   display: flex;
   flex-direction: column; /* S'assure que l'image et le contenu sont empilés verticalement */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Mixin card */
 }
 .restaurants-section .restaurant-card:hover {
   transform: translateY(-5px);
@@ -278,6 +302,15 @@ a {
 .restaurants-section .restaurant-card__favorite:hover .favorite-full {
   opacity: 1;
 }
+@media (min-width: 1024px) {
+  .restaurants-section {
+    padding: 40px 180px;
+  }
+  .restaurants-section__cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 100px;
+  }
+}
 
 .footer {
   background-color: #333;
@@ -314,6 +347,29 @@ a {
 }
 .footer__links .footer__link i {
   margin-right: 8px; /* Espace entre l'icône et le texte */
+}
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 60px 25px 30px 25px;
+  }
+  .footer__logo {
+    justify-content: flex-end;
+    padding-bottom: 0;
+    order: 2;
+  }
+  .footer__links {
+    flex-direction: row;
+    align-items: center;
+    order: 1;
+    margin-right: 50px;
+  }
+  .footer__links .footer__link {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
 }
 
 .restaurant__image {

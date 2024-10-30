@@ -12,10 +12,7 @@
 
   &__cards {
     display: grid;
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(300px, 1fr)
-    ); /* Adaptation responsive */
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 
@@ -25,12 +22,20 @@
       $shadow-light,
       $shadow-medium,
       -5px
-    ); /* Mixin card */
+    ); // Mixin card
 
     &__favorite {
       width: 22px;
       height: 22px;
       @include icon-favorite-animation;
+    }
+  }
+  @media (min-width: 1024px) {
+    padding: 40px 180px;
+
+    &__cards {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px 100px;
     }
   }
 }

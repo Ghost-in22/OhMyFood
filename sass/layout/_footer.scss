@@ -39,4 +39,28 @@
       }
     }
   }
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 60px 25px 30px 25px;
+
+    &__logo {
+      justify-content: flex-end;
+      padding-bottom: 0;
+      order: 2;
+    }
+
+    &__links {
+      flex-direction: row;
+      align-items: center;
+      order: 1;
+      margin-right: 50px;
+
+      .footer__link {
+        margin-right: 20px; // Espacement entre les liens
+        margin-bottom: 0; // Enlève l'espacement du bas
+      }
+    }
+  }
 }

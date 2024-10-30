@@ -55,4 +55,23 @@
       }
     }
   }
+  @media (min-width: 1024px) {
+    padding: 50px 180px;
+
+    .steps {
+      flex-direction: row;
+      gap: 25px;
+      justify-content: center;
+
+      .step {
+        width: 335px;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1050px) {
+    .btn-step {
+      height: 110px;
+    }
+  }
 }
