@@ -393,6 +393,12 @@ a {
   position: relative;
   z-index: 5;
 }
+@media (min-width: 1024px) {
+  .restaurant__main {
+    width: 1055px;
+    margin: -50px auto 0 auto;
+  }
+}
 .restaurant__header {
   display: flex;
   justify-content: space-between;
@@ -400,10 +406,20 @@ a {
   flex-wrap: nowrap;
   padding-top: 10px;
 }
+@media (min-width: 1024px) {
+  .restaurant__header {
+    justify-content: center;
+  }
+}
 .restaurant__name {
   font-size: 28px;
   color: #000;
   font-family: "Shrikhand", cursive;
+}
+@media (min-width: 1024px) {
+  .restaurant__name {
+    margin-right: 24px;
+  }
 }
 .restaurant__favorite {
   position: relative;
@@ -440,8 +456,19 @@ a {
 .restaurant__favorite:hover .favorite-full {
   opacity: 1;
 }
+@media (min-width: 1024px) {
+  .restaurant__favorite {
+    margin-right: 0px;
+  }
+}
 .restaurant__menu-section {
   padding-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .restaurant__menu-section {
+    width: 634px;
+    margin: 0 auto;
+  }
 }
 .restaurant__menu-title {
   font-family: "Roboto", sans-serif;

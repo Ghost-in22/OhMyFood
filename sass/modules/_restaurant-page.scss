@@ -22,6 +22,11 @@
     padding: 20px;
     position: relative;
     z-index: 5;
+
+    @media (min-width: 1024px) {
+      width: 1055px; // Largeur de la main sur la maquette
+      margin: -50px auto 0 auto; // Centre la section main
+    }
   }
 
   &__header {
@@ -30,12 +35,20 @@
     align-items: center;
     flex-wrap: nowrap;
     padding-top: 10px;
+
+    @media (min-width: 1024px) {
+      justify-content: center;
+    }
   }
 
   &__name {
     font-size: 28px;
     color: #000;
     font-family: $font-restaurant-title;
+
+    @media (min-width: 1024px) {
+      margin-right: 24px;
+    }
   }
 
   &__favorite {
@@ -45,10 +58,19 @@
     height: 22px;
     @include icon-favorite-animation;
     cursor: pointer;
+
+    @media (min-width: 1024px) {
+      margin-right: 0px;
+    }
   }
 
   &__menu-section {
     padding-bottom: 20px;
+
+    @media (min-width: 1024px) {
+      width: 634px;
+      margin: 0 auto;
+    }
   }
 
   &__menu-title {
